@@ -14,6 +14,8 @@ public class ResetScript : MonoBehaviour
     public void RestartGame()
     {
     GameControl.diceSideThrown = 0; 
+    GameControl.player1StartWaypoint = 0; 
+    GameControl.player2StartWaypoint = 0;
     }
 
 }

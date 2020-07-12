@@ -63,12 +63,14 @@
      <Compile Include="Assets\Script\DontDestroyAudio.cs" />
      <Compile Include="Assets\Script\FollowThePath.cs" />
      <Compile Include="Assets\Script\GameControl.cs" />
+     <Compile Include="Assets\Script\Pause.cs" />
      <Compile Include="Assets\Script\ResetScript.cs" />
      <Compile Include="Assets\Script\btnFX.cs" />
      <Compile Include="Assets\Script\btnPanelQuiz.cs" />
      <Compile Include="Assets\Script\cloudMove.cs" />
      <Compile Include="Assets\Script\gameOver.cs" />
      <Compile Include="Assets\Script\navigasiMove.cs" />
+     <Compile Include="Assets\Script\winnerScript.cs" />
  <Reference Include="UnityEngine">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.1f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>

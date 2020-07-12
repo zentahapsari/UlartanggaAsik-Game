@@ -137,10 +137,10 @@ MonoBehaviour:
     y: 30
     width: 1536
     height: 771
-  m_MinSize: {x: 908, y: 421}
-  m_MaxSize: {x: 22003, y: 10021}
+  m_MinSize: {x: 909, y: 421}
+  m_MaxSize: {x: 22004, y: 10021}
   vertical: 0
-  controlID: 104123
+  controlID: 122944
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -165,7 +165,7 @@ MonoBehaviour:
   m_MinSize: {x: 201, y: 421}
   m_MaxSize: {x: 4001, y: 8021}
   vertical: 1
-  controlID: 104219
+  controlID: 122945
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -425,9 +425,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.8977997, y: -0.5074978, z: 14.016517}
+    m_Target: {x: 1.1152859, y: 0.2521038, z: -354.03937}
     speed: 2
-    m_Value: {x: 0.8977997, y: -0.5074978, z: 14.016517}
+    m_Value: {x: 1.1152859, y: 0.2521038, z: -354.03937}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -477,9 +477,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 3.1755083
+    m_Target: 2.334617
     speed: 2
-    m_Value: 3.1755083
+    m_Value: 2.334617
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -613,10 +613,10 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: aa320000
+      scrollPos: {x: 0, y: 160}
+      m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 0842feffd642feff9e43feffce46feff2c50feff6e50feff8050feff8e50feff9c50feff2453feff3253feff4053feff6c60feff9691fefff093feff8095feff8e95feff12b1feff30b1feff02b2feffcc11ffffe611ffff7613ffff0624ffff2642ffff085dffff165dffff645fffffb46bffff4a75ffffd478ffff4e7cffff487fffff2a81ffff1c86fffff687ffff308fffff4090ffff609dffff689dffff1e9fffff2c9fffff10cdfffff4cfffffe6e4ffffb0e5ffff58e9ffffe0eeffffeeeeffffe2f1ffff08f2ffff16f2ffff96f2ffff94f3ffffb0f3ffff20f6ffff5efbffffa85000008cb1000062c90000a6ca0000e80d0100620e0100020f010056680100d0680100c68201000c890100b09c010044a2010058a20100dec70100ecc701001ac8010090c90100a8ca0100c0ca010074cb010004cc01006ecc0100241502003215020060150200ee1f0200fe1f02005c21020088210200b2210200642202007e9a0200f49b020012bc0200c4c10200e6c80200fec802006aca02008c0f0300ba0f03000c1c03004e240300b6240300f2480300
+      m_ExpandedIDs: f429feff7e42feffcc42feff886efeff70bafeff4cbefeff5abefeffa6effeffb4effeffd0effeffe4effeff04f6feff5405ffff9e05ffffe005ffffb619ffffcc19ffff4e1affff9a1affffba1affff7e1bffffa01bffffd621ffff1e22ffffd42effff8c31ffff9a43ffff1044ffff9844ffffea44ffff1c45ffffd047ffff044affff784dffff864dffff944dffffaa4effffb84effffdc51ffffea51fffff851ffff5a72ffff0e7affff8a8affff0e8cffff0e8dfffffc8effff0a8fffff9a94ffffa294ffffba96ffff9097fffff89affff72a5ffff94a6ffffbaa6ffffe2a6ffff3ebbffff5af5ffff68f5ffff44f7ffffb4faffff5efbffffe2400000c44200001843000044430000664300008cfe000008000100d01301001a290100d2320100c05001000a5c0100288d0100a48e01005ec70100cee2010048ee01006af90100def90100a43d0200d43f0200564002006c6a02009c6c02001e6d0200b86f02003a70020072be020032d70200e6d80200447e03001080030088800300b480030024cb0400f4fa06001cfd060092fe06006aff0600a8ff0600
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -679,20 +679,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Script
+    - Assets/Object
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Script
+  - Assets/Object
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Bintang\utangasikGame
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 143b0000
-    m_LastClickedID: 15124
-    m_ExpandedIDs: 00000000063b000000ca9a3b
+    m_SelectedIDs: ac3b0000
+    m_LastClickedID: 15276
+    m_ExpandedIDs: 00000000a03b000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -720,7 +720,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000063b000000ca9a3b
+    m_ExpandedIDs: 00000000a03b000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -772,7 +772,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 0}
+    m_ScrollPosition: {x: 0, y: 120}
     m_GridSize: 64
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 105

@@ -11,6 +11,7 @@ public class FollowThePath : MonoBehaviour {
     public int waypointIndex = 0;
 
     public bool moveAllowed = false;
+    public bool mundurAllowed = false;
 
 	// Use this for initialization
 	private void Start () {
@@ -34,6 +35,21 @@ public class FollowThePath : MonoBehaviour {
             if (transform.position == waypoints[waypointIndex].transform.position)
             {
                 waypointIndex += 1;
+            }
+        }
+    }
+
+        private void Mundur()
+    {
+        if (waypointIndex <= waypoints.Length - 1)
+        {
+            transform.position = Vector2.MoveTowards(transform.position,
+            waypoints[waypointIndex].transform.position,
+            moveSpeed * Time.deltaTime);
+
+            if (transform.position == waypoints[waypointIndex].transform.position)
+            {
+                waypointIndex -= 1;
             }
         }
     }

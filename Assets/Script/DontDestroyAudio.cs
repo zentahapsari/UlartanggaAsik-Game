@@ -11,14 +11,17 @@ public class DontDestroyAudio : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        DontDestroyOnLoad(transform.gameObject);
+ 
+        DontDestroyOnLoad (music);
+ 
+        SceneManager.sceneLoaded += OnSceneLoaded;
     }
-
-    // void OnSceneLoaded (Scene scene, LoadSceneMode mode)
-    // {
-    //     if((scene.buildIndex != 0) && (scene.buildIndex != 1))
-    //     {
-    //         Destroy(music);
-    //     }
-    // }
+ 
+    void OnSceneLoaded (Scene scene, LoadSceneMode mode)
+    {
+        if((scene.buildIndex != 0) && (scene.buildIndex != 1))
+        {
+            Destroy(music);
+        }
+    }
 }
