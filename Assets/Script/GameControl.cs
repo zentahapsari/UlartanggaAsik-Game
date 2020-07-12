@@ -191,6 +191,10 @@ public class GameControl : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
+
+         if (Input.GetKeyDown(KeyCode.Escape)) {
+        Application.Quit();
+    }
 //Turn text
         if (player1.GetComponent<FollowThePath>().waypointIndex > 
             player1StartWaypoint + diceSideThrown)
@@ -274,7 +278,7 @@ public class GameControl : MonoBehaviour {
                 B4.gameObject.SetActive(true);
                 C4.gameObject.SetActive(true);
                 soal4.gameObject.SetActive(true);
-                soal4.GetComponent<Text>().text = "Jumlah pulau di Indonesia...         A.16.056  B.17.491  C.18.306";
+                soal4.GetComponent<Text>().text = "Jumlah pulau di Indonesia...  A.16.056  B.17.491  C.18.306";
                 StartCoroutine(hitungmundur());
                 MovePlayer(1);
             }
@@ -290,7 +294,8 @@ public class GameControl : MonoBehaviour {
                 B5.gameObject.SetActive(true);
                 C5.gameObject.SetActive(true);
                 soal5.gameObject.SetActive(true);
-                soal5.GetComponent<Text>().text = "Lir Ilir, Gundhul Pacul lagu daerah provinsi...    A.Jawa Tengah  B.Jawa Timur  C.DI Yogyakarta";
+                soal5.GetComponent<Text>().text = "Lir Ilir, Gundhul Pacul lagu daerah provinsi..."+
+                "A.Jawa Tengah  B.Jawa Timur  C.DI Yogyakarta";
                 StartCoroutine(hitungmundur());
                 MovePlayer(1);
             }
@@ -361,7 +366,7 @@ public class GameControl : MonoBehaviour {
                 B6.gameObject.SetActive(true);
                 C6.gameObject.SetActive(true);
                 soal6.gameObject.SetActive(true);
-                soal6.GetComponent<Text>().text = "Jumlah Provinsi di Indonesia...              A.30  B.32  C.34";
+                soal6.GetComponent<Text>().text = "Jumlah Provinsi di Indonesia... A.30  B.32  C.34";
                 StartCoroutine(hitungmundur());
                 MovePlayer(2);
             }
@@ -377,7 +382,7 @@ public class GameControl : MonoBehaviour {
                 B7.gameObject.SetActive(true);
                 C7.gameObject.SetActive(true);
                 soal7.gameObject.SetActive(true);
-                soal7.GetComponent<Text>().text = "Dasar negara Indonesia adalah...       A.Pancasila  B.UUD1945  C.Keputusan Presiden";
+                soal7.GetComponent<Text>().text = "Dasar negara Indonesia adalah... A.Pancasila B.UUD1945 C.Keputusan Presiden";
                 StartCoroutine(hitungmundur());
                 MovePlayer(2);
             }
@@ -393,7 +398,7 @@ public class GameControl : MonoBehaviour {
                 B8.gameObject.SetActive(true);
                 C8.gameObject.SetActive(true);
                 soal8.gameObject.SetActive(true);
-                soal8.GetComponent<Text>().text = "Sila ketiga Pancasila dilambangkan...     A.Rantai  B.Pohon Beringin  C.Padi dan Kapas";
+                soal8.GetComponent<Text>().text = "Sila ketiga Pancasila dilambangkan...  A.Rantai  B.Pohon Beringin  C.Padi dan Kapas";
                 StartCoroutine(hitungmundur());
                 MovePlayer(2);
             }
@@ -409,7 +414,7 @@ public class GameControl : MonoBehaviour {
                 B9.gameObject.SetActive(true);
                 C9.gameObject.SetActive(true);
                 soal9.gameObject.SetActive(true);
-                soal9.GetComponent<Text>().text = "Jumlah suku di Indonesia...              A.1.340  B.1.500  C.1210";
+                soal9.GetComponent<Text>().text = "Jumlah suku di Indonesia... A.1.340  B.1.500  C.1210";
                 StartCoroutine(hitungmundur());
                 MovePlayer(2);
             }
@@ -425,7 +430,7 @@ public class GameControl : MonoBehaviour {
                 B10.gameObject.SetActive(true);
                 C10.gameObject.SetActive(true);
                 soal10.gameObject.SetActive(true);
-                soal10.GetComponent<Text>().text = "Gamelan adalah alat musik...         A.Maluku  B.Jawa  C.Jambi";
+                soal10.GetComponent<Text>().text = "Gamelan adalah alat musik... A.Maluku  B.Jawa  C.Jambi";
                 StartCoroutine(hitungmundur());
                 MovePlayer(2);
             }
@@ -492,13 +497,14 @@ public class GameControl : MonoBehaviour {
             player1.GetComponent<FollowThePath>().waypoints.Length)
         {
             // SceneManager.LoadScene("HalamanGO");
-            HomeGO.gameObject.SetActive(true);
+            // HomeGO.gameObject.SetActive(true);
             bgGO.gameObject.SetActive(true);
             whoWinsTextShadow.gameObject.SetActive(true);
             player1MoveText.gameObject.SetActive(false);
             player2MoveText.gameObject.SetActive(false);
-            PanelQuiz.gameObject.SetActive(true);
+            // PanelQuiz.gameObject.SetActive(true);
             whoWinsTextShadow.GetComponent<Text>().text = "Player 1 Wins";
+            player1StartWaypoint=0;
             // gameOver = true;
         }
 
@@ -506,13 +512,15 @@ public class GameControl : MonoBehaviour {
             player2.GetComponent<FollowThePath>().waypoints.Length)
         {
             // SceneManager.LoadScene("HalamanGO");
-            HomeGO.gameObject.SetActive(true);
+            // HomeGO.gameObject.SetActive(true);
             bgGO.gameObject.SetActive(true);
             whoWinsTextShadow.gameObject.SetActive(true);
             player1MoveText.gameObject.SetActive(false);
             player2MoveText.gameObject.SetActive(false);
-            PanelQuiz.gameObject.SetActive(true);
+            // dice.gameObject.SetActive(false);
+            // PanelQuiz.gameObject.SetActive(true);
             whoWinsTextShadow.GetComponent<Text>().text = "Player 2 Wins";
+            player2StartWaypoint=0;
             // gameOver = true;
         }
     }
@@ -647,13 +655,13 @@ public class GameControl : MonoBehaviour {
         soal1.GetComponent<Text>().text = "Sungai Kapuas Adalah sungai terpanjang di Indonesia, yang berada di Kalimantan Barat";
         soal2.GetComponent<Text>().text = "Suaka Margasatwa untuk perlindungan hewan, hutan lindung untuk pelestarian keanekaragaman makhluk hidup ";
         soal3.GetComponent<Text>().text = "Lagu Poco-Poco dari daerah Maluku dan Rek Ayo Rek dari Surabaya";
-        soal4.GetComponent<Text>().text = "Menurut Kementerian Koordinator Bidang Kemaritiman dan Investasi Indonesia Desember 2019";
+        soal4.GetComponent<Text>().text = "Terdapat 17.491 pulau di Indonesia menurut Kementerian Koordinator Bidang Kemaritiman dan Investasi RI";
         soal5.GetComponent<Text>().text = "Lagu daerah Lir Ilir, Gundul Pacul, Gambang Suling berasal dari Jawa Tengah";
-        soal6.GetComponent<Text>().text = "Secara de facto, dan menurut kementrian dalam negeri / KEMENDAGRI";
+        soal6.GetComponent<Text>().text = "Terdapat 34 provinsi di Indonesia menurut kementrian dalam negeri / KEMENDAGRI";
         soal7.GetComponent<Text>().text = "Pancasila resmi disahkan sebagai dasar negara pada 22 juni 1945";
         soal8.GetComponent<Text>().text = "Melambangkan tempat berteduh dan berlindung dengan akar tunjang mencerminkan persatuan dan kesatuan";
-        soal9.GetComponent<Text>().text = "Menurut sensus BPS tahun 2010";
-        soal10.GetComponent<Text>().text = "Gamelan alat musik khas Jawa, Sunda, dan Bali";
+        soal9.GetComponent<Text>().text = "Terdapat 1.340 suku di Indonesia menurut sensus BPS tahun 2010";
+        soal10.GetComponent<Text>().text = "Gamelan merupakan alat musik khas Jawa, Sunda, dan Bali";
         
 
         
